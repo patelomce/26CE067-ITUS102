@@ -1,0 +1,61 @@
+ITUS102 - PRACTICAL EXAMINATION | DEBUGGING AND IMPLEMENTATION REPORT
+
+Date: 13-10-2026 | Task 02 - Library Late-Return Fine Calculator
+
+Enrollment No.: 26CE067
+
+Name: Patel Om Pareshkumar
+
+
+SIMPLE BUGS
+
+Bug | Original problem | Correction made | Why required
+
+S1 | The first navigation link had the incorrect target "#calcuator". | Changed it to "#calculator". | Ensures the link scrolls to the calculator section.
+
+S2 | The footer information used a generic `<div>` element. | Replaced it with the semantic `<footer>` element. | Gives the bottom site-information area the correct HTML5 semantic meaning.
+
+S3 | The background-color declaration was missing a colon. | Corrected it to `background-color: #f1f6f9;`. | Fixes the CSS syntax so the background color is applied.
+
+S4 | The `.pageTitle` selector did not match the heading's HTML ID. | Changed it to `#pageTitle`. | Selects the heading correctly.
+
+S5 | The program subtracted 1 from the entered number of late days. | Removed `- 1` from the lateDays calculation. | Uses the actual number of late days when calculating the fine.
+
+S6 | The processing-charge constant was set to 100. | Changed it to 10. | Applies the required ₹10 processing charge.
+
+
+CODE COMPLETION / IMPLEMENTATION
+
+M1: Added UTF-8 charset metadata and the responsive viewport metadata.
+
+M2: Added an HTML5 `<aside>` containing the heading "Important Note" and a reminder to check entered values.
+
+M3: Used Flexbox with `display: flex` and `justify-content: space-between` for horizontal navigation.
+
+M4: Used CSS Grid with `grid-template-columns: repeat(2, 1fr)` to display two equal-width information cards.
+
+M5: Added a media query for screens 600px and below. The cards stack in one column, and the navigation becomes vertical.
+
+M6: Implemented `calculateFine(days, books, rate)` to return the basic fine using days × books × rate.
+
+D1: Implemented `chooseRate(type)` using if-else statements: Student = ₹5, Staff = ₹3, Visitor = ₹10 per day per book.
+
+D2: Implemented `calculateTotal(fine, processingCharge)` to return 0 when there is no fine; otherwise, it returns the fine plus the processing charge.
+
+D3: Implemented `buildBreakdown(days, books, rate)` using a for loop to display the cumulative fine for each late day.
+
+
+FUNCTIONAL TEST
+
+Test input: 5 late days, 2 books, Student.
+
+Observed result: Rate ₹5 per day per book; basic fine ₹50; processing charge ₹10; total ₹60; cumulative fine after day 5 ₹50.
+
+Mobile layout checked (Yes/No): Yes
+
+
+GIT VERSION CONTROL
+
+git log -1 --oneline output: [To be filled in after creating a Git commit.]
+
+GitHub URL (if available): [To be filled in after connecting the local project to GitHub.]
