@@ -56,6 +56,8 @@ Mobile layout checked (Yes/No): Yes
 
 GIT VERSION CONTROL
 
-git log -1 --oneline output: [To be filled in after creating a Git commit.]
+Git commit output:
+1df14a7 (HEAD -> master) Complete Library Fine Calculator practical task
 
-GitHub URL (if available): [To be filled in after connecting the local project to GitHub.]
+GitHub repository URL:
+https://github.com/patelomce/26CE067-ITUS102
